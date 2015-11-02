@@ -13,19 +13,8 @@
 		36D9C25F1BB1C1D60029F1FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36D9C25D1BB1C1D60029F1FD /* Main.storyboard */; };
 		36D9C2611BB1C1D60029F1FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36D9C2601BB1C1D60029F1FD /* Images.xcassets */; };
 		36D9C2641BB1C1D60029F1FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36D9C2621BB1C1D60029F1FD /* LaunchScreen.xib */; };
-		36D9C2701BB1C1D60029F1FD /* CirclePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D9C26F1BB1C1D60029F1FD /* CirclePickerTests.m */; };
 		36D9C27B1BB1C44D0029F1FD /* CircularPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 36D9C27A1BB1C44D0029F1FD /* CircularPickerView.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		36D9C26A1BB1C1D60029F1FD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 36D9C2481BB1C1D60029F1FD /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 36D9C24F1BB1C1D60029F1FD;
-			remoteInfo = CirclePicker;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		36D9C2501BB1C1D60029F1FD /* CirclePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CirclePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,22 +27,12 @@
 		36D9C25E1BB1C1D60029F1FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36D9C2601BB1C1D60029F1FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		36D9C2631BB1C1D60029F1FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		36D9C2691BB1C1D60029F1FD /* CirclePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CirclePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		36D9C26E1BB1C1D60029F1FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		36D9C26F1BB1C1D60029F1FD /* CirclePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CirclePickerTests.m; sourceTree = "<group>"; };
 		36D9C2791BB1C44D0029F1FD /* CircularPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularPickerView.h; sourceTree = "<group>"; };
 		36D9C27A1BB1C44D0029F1FD /* CircularPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularPickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		36D9C24D1BB1C1D60029F1FD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		36D9C2661BB1C1D60029F1FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,7 +46,6 @@
 			isa = PBXGroup;
 			children = (
 				36D9C2521BB1C1D60029F1FD /* CirclePicker */,
-				36D9C26C1BB1C1D60029F1FD /* CirclePickerTests */,
 				36D9C2511BB1C1D60029F1FD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				36D9C2501BB1C1D60029F1FD /* CirclePicker.app */,
-				36D9C2691BB1C1D60029F1FD /* CirclePickerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,23 +84,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		36D9C26C1BB1C1D60029F1FD /* CirclePickerTests */ = {
-			isa = PBXGroup;
-			children = (
-				36D9C26F1BB1C1D60029F1FD /* CirclePickerTests.m */,
-				36D9C26D1BB1C1D60029F1FD /* Supporting Files */,
-			);
-			path = CirclePickerTests;
-			sourceTree = "<group>";
-		};
-		36D9C26D1BB1C1D60029F1FD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				36D9C26E1BB1C1D60029F1FD /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,24 +104,6 @@
 			productReference = 36D9C2501BB1C1D60029F1FD /* CirclePicker.app */;
 			productType = "com.apple.product-type.application";
 		};
-		36D9C2681BB1C1D60029F1FD /* CirclePickerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 36D9C2761BB1C1D60029F1FD /* Build configuration list for PBXNativeTarget "CirclePickerTests" */;
-			buildPhases = (
-				36D9C2651BB1C1D60029F1FD /* Sources */,
-				36D9C2661BB1C1D60029F1FD /* Frameworks */,
-				36D9C2671BB1C1D60029F1FD /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				36D9C26B1BB1C1D60029F1FD /* PBXTargetDependency */,
-			);
-			name = CirclePickerTests;
-			productName = CirclePickerTests;
-			productReference = 36D9C2691BB1C1D60029F1FD /* CirclePickerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -173,10 +115,6 @@
 				TargetAttributes = {
 					36D9C24F1BB1C1D60029F1FD = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					36D9C2681BB1C1D60029F1FD = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 36D9C24F1BB1C1D60029F1FD;
 					};
 				};
 			};
@@ -194,7 +132,6 @@
 			projectRoot = "";
 			targets = (
 				36D9C24F1BB1C1D60029F1FD /* CirclePicker */,
-				36D9C2681BB1C1D60029F1FD /* CirclePickerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -207,13 +144,6 @@
 				36D9C25F1BB1C1D60029F1FD /* Main.storyboard in Resources */,
 				36D9C2641BB1C1D60029F1FD /* LaunchScreen.xib in Resources */,
 				36D9C2611BB1C1D60029F1FD /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		36D9C2671BB1C1D60029F1FD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,23 +161,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36D9C2651BB1C1D60029F1FD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				36D9C2701BB1C1D60029F1FD /* CirclePickerTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		36D9C26B1BB1C1D60029F1FD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 36D9C24F1BB1C1D60029F1FD /* CirclePicker */;
-			targetProxy = 36D9C26A1BB1C1D60029F1FD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		36D9C25D1BB1C1D60029F1FD /* Main.storyboard */ = {
@@ -389,40 +303,6 @@
 			};
 			name = Release;
 		};
-		36D9C2771BB1C1D60029F1FD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CirclePickerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CirclePicker.app/CirclePicker";
-			};
-			name = Debug;
-		};
-		36D9C2781BB1C1D60029F1FD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CirclePickerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CirclePicker.app/CirclePicker";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -440,15 +320,6 @@
 			buildConfigurations = (
 				36D9C2741BB1C1D60029F1FD /* Debug */,
 				36D9C2751BB1C1D60029F1FD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		36D9C2761BB1C1D60029F1FD /* Build configuration list for PBXNativeTarget "CirclePickerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				36D9C2771BB1C1D60029F1FD /* Debug */,
-				36D9C2781BB1C1D60029F1FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
