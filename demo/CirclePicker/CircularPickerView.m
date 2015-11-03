@@ -134,7 +134,14 @@
     CGContextSetRGBFillColor(context, 0.f, 0.f, 0.f, 0.f);
     CGContextSetLineCap(context, kCGLineCapButt);
     CGContextSetStrokeColorWithColor(context, color.CGColor);
-    CGContextAddArc(context, center.x, center.y, radius, -M_PI_2, DEGREES_TO_RADIANS(endAngle) - M_PI_2, NO);
+    
+    CGContextAddArc(context,
+                    center.x,
+                    center.y,
+                    radius,
+                    -M_PI_2,
+                    -M_PI_2 + DEGREES_TO_RADIANS(endAngle),
+                    NO);
     
     CGContextStrokePath(context);
 }
@@ -143,7 +150,7 @@
 
 -(void)awakeFromNib{
     self.coef = (self.maxValue - self.minValue) / 360.f;
-    self.angle = ( self.defulatValue - self.minValue ) / self.coef;
+    self.angle = ( self.defaultValue - self.minValue ) / self.coef;
     
     if(!self.step){
         self.step = 1;

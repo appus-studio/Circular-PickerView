@@ -23,7 +23,7 @@
     [super viewDidLoad];
     
     self.lineWidthLabel.text = @(self.picker.lineWidth).stringValue;
-    self.valueLabel.text     = @(self.picker.defulatValue).stringValue;
+    self.valueLabel.text     = @(self.picker.defaultValue).stringValue;
 }
 
 #pragma mark - Actions
