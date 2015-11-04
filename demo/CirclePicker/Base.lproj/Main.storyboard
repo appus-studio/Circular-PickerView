@@ -40,13 +40,13 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
                                         <integer key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="defulatValue">
-                                        <integer key="value" value="16"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="step">
                                         <integer key="value" value="0"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="autocomplete" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="defaultValue">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="vladuChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="DfZ-7n-ffl"/>
@@ -134,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="730" y="282"/>
+            <point key="canvasLocation" x="491" y="234"/>
         </scene>
     </scenes>
 </document>

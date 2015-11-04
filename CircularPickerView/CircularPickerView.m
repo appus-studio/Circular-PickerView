@@ -15,6 +15,7 @@
 @interface CircularPickerView()
 
 @property(nonatomic)CGFloat angle;
+/// -coef -
 @property(nonatomic)CGFloat coef;
 
 @property(nonatomic, readwrite)CGFloat currentValue;
@@ -30,7 +31,7 @@
 }
 
 -(void)setLineWidth:(CGFloat)lineWidth{
-   _lineWidth = lineWidth;
+    _lineWidth = lineWidth;
     [self setNeedsDisplay];
 }
 
@@ -51,11 +52,11 @@
     float currentAngle = [self angleFromPoint:point];
     
     if(self.autocomplete){
-         currentAngle = [self autocompleteAngle:currentAngle];
+        currentAngle = [self autocompleteAngle:currentAngle];
     }
-   
+    
     [self setAngle:currentAngle];
-
+    
     self.currentValue = [self getCurrentValue];
     [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
@@ -77,7 +78,7 @@
 }
 
 -(CGFloat)getCurrentValue{
-    return (self.angle * self.coef) + self.minValue;
+    return (self.angle * self.coef) + self.minValue; // if min value differs from 0 we should cobsider
 }
 
 -(CGPoint)pointFromTouches:(NSSet*)touches{
@@ -134,7 +135,14 @@
     CGContextSetRGBFillColor(context, 0.f, 0.f, 0.f, 0.f);
     CGContextSetLineCap(context, kCGLineCapButt);
     CGContextSetStrokeColorWithColor(context, color.CGColor);
-    CGContextAddArc(context, center.x, center.y, radius, -M_PI_2, DEGREES_TO_RADIANS(endAngle) - M_PI_2, NO);
+    
+    CGContextAddArc(context,
+                    center.x,
+                    center.y,
+                    radius,
+                    -M_PI_2,
+                    -M_PI_2 + DEGREES_TO_RADIANS(endAngle),
+                    NO);
     
     CGContextStrokePath(context);
 }
@@ -142,8 +150,8 @@
 #pragma mark - lifecycle
 
 -(void)awakeFromNib{
-    self.coef = (self.maxValue - self.minValue) / 360.f;
-    self.angle = ( self.defulatValue - self.minValue ) / self.coef;
+    self.coef = (self.maxValue - self.minValue) / 360.f;// part of sector in one degrees
+    self.angle = ( self.defaultValue - self.minValue ) / self.coef;
     
     if(!self.step){
         self.step = 1;
@@ -152,7 +160,7 @@
 
 - (void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-
+    
     [self drawArcBg];
     [self drawActiveArc];
     

@@ -15,6 +15,7 @@
 @interface CircularPickerView()
 
 @property(nonatomic)CGFloat angle;
+/// -coef -
 @property(nonatomic)CGFloat coef;
 
 @property(nonatomic, readwrite)CGFloat currentValue;
@@ -77,7 +78,7 @@
 }
 
 -(CGFloat)getCurrentValue{
-    return (self.angle * self.coef) + self.minValue;
+    return (self.angle * self.coef) + self.minValue; // if min value differs from 0 we should cobsider
 }
 
 -(CGPoint)pointFromTouches:(NSSet*)touches{
@@ -149,7 +150,7 @@
 #pragma mark - lifecycle
 
 -(void)awakeFromNib{
-    self.coef = (self.maxValue - self.minValue) / 360.f;
+    self.coef = (self.maxValue - self.minValue) / 360.f;// part of sector in one degrees
     self.angle = ( self.defaultValue - self.minValue ) / self.coef;
     
     if(!self.step){
