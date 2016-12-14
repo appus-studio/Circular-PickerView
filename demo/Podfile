@@ -4,6 +4,6 @@
 use_frameworks!
 
 target 'CircularPickerViewSwift' do
-pod 'CircularPickerView', :git => 'https://github.com/alexey-kubas-appus/Circular-PickerView'
+pod 'CircularPickerView'
 
 end
