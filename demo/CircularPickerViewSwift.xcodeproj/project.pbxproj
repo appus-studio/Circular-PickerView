@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E266FA51E01491700A165AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E266FA41E01491700A165AD /* AppDelegate.swift */; };
+		3E266FA71E01491700A165AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E266FA61E01491700A165AD /* ViewController.swift */; };
+		3E266FAA1E01491700A165AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E266FA81E01491700A165AD /* Main.storyboard */; };
+		3E266FAC1E01491700A165AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E266FAB1E01491700A165AD /* Assets.xcassets */; };
+		3E266FAF1E01491700A165AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E266FAD1E01491700A165AD /* LaunchScreen.storyboard */; };
+		89B7EBD03C97B49DBA080B6E /* Pods_CircularPickerViewSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73B574E5C03C1A20CDD78CDC /* Pods_CircularPickerViewSwift.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		280CAEE76FC044B58F753DE4 /* Pods-CircularPickerViewSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircularPickerViewSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-CircularPickerViewSwift/Pods-CircularPickerViewSwift.release.xcconfig"; sourceTree = "<group>"; };
+		3E266FA11E01491700A165AD /* CircularPickerViewSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircularPickerViewSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E266FA41E01491700A165AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3E266FA61E01491700A165AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3E266FA91E01491700A165AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E266FAB1E01491700A165AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E266FAE1E01491700A165AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E266FB01E01491700A165AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73B574E5C03C1A20CDD78CDC /* Pods_CircularPickerViewSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CircularPickerViewSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DDD333D97C6DB3651486A50 /* Pods-CircularPickerViewSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CircularPickerViewSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CircularPickerViewSwift/Pods-CircularPickerViewSwift.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E266F9E1E01491700A165AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89B7EBD03C97B49DBA080B6E /* Pods_CircularPickerViewSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E266F981E01491700A165AD = {
+			isa = PBXGroup;
+			children = (
+				3E266FA31E01491700A165AD /* CircularPickerViewSwift */,
+				3E266FA21E01491700A165AD /* Products */,
+				CBFFDFD774814F8C3B6D9C81 /* Pods */,
+				60782E697979C584A2679E04 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3E266FA21E01491700A165AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E266FA11E01491700A165AD /* CircularPickerViewSwift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E266FA31E01491700A165AD /* CircularPickerViewSwift */ = {
+			isa = PBXGroup;
+			children = (
+				3E266FA41E01491700A165AD /* AppDelegate.swift */,
+				3E266FA61E01491700A165AD /* ViewController.swift */,
+				3E266FA81E01491700A165AD /* Main.storyboard */,
+				3E266FAB1E01491700A165AD /* Assets.xcassets */,
+				3E266FAD1E01491700A165AD /* LaunchScreen.storyboard */,
+				3E266FB01E01491700A165AD /* Info.plist */,
+			);
+			path = CircularPickerViewSwift;
+			sourceTree = "<group>";
+		};
+		60782E697979C584A2679E04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73B574E5C03C1A20CDD78CDC /* Pods_CircularPickerViewSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBFFDFD774814F8C3B6D9C81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DDD333D97C6DB3651486A50 /* Pods-CircularPickerViewSwift.debug.xcconfig */,
+				280CAEE76FC044B58F753DE4 /* Pods-CircularPickerViewSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E266FA01E01491700A165AD /* CircularPickerViewSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E266FB31E01491700A165AD /* Build configuration list for PBXNativeTarget "CircularPickerViewSwift" */;
+			buildPhases = (
+				049D85ADA8694805F7531A93 /* [CP] Check Pods Manifest.lock */,
+				3E266F9D1E01491700A165AD /* Sources */,
+				3E266F9E1E01491700A165AD /* Frameworks */,
+				3E266F9F1E01491700A165AD /* Resources */,
+				36423C7F38DEFBBE6A5C65CC /* [CP] Embed Pods Frameworks */,
+				764B9D321F7FDAC9CB093661 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircularPickerViewSwift;
+			productName = CircularPickerViewSwift;
+			productReference = 3E266FA11E01491700A165AD /* CircularPickerViewSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E266F991E01491700A165AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Sergey Sokoltsov";
+				TargetAttributes = {
+					3E266FA01E01491700A165AD = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3E266F9C1E01491700A165AD /* Build configuration list for PBXProject "CircularPickerViewSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E266F981E01491700A165AD;
+			productRefGroup = 3E266FA21E01491700A165AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E266FA01E01491700A165AD /* CircularPickerViewSwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E266F9F1E01491700A165AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E266FAF1E01491700A165AD /* LaunchScreen.storyboard in Resources */,
+				3E266FAC1E01491700A165AD /* Assets.xcassets in Resources */,
+				3E266FAA1E01491700A165AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		049D85ADA8694805F7531A93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		36423C7F38DEFBBE6A5C65CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircularPickerViewSwift/Pods-CircularPickerViewSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		764B9D321F7FDAC9CB093661 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CircularPickerViewSwift/Pods-CircularPickerViewSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E266F9D1E01491700A165AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E266FA71E01491700A165AD /* ViewController.swift in Sources */,
+				3E266FA51E01491700A165AD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3E266FA81E01491700A165AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E266FA91E01491700A165AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E266FAD1E01491700A165AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E266FAE1E01491700A165AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E266FB11E01491700A165AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E266FB21E01491700A165AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E266FB41E01491700A165AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DDD333D97C6DB3651486A50 /* Pods-CircularPickerViewSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CircularPickerViewSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Appus.CircularPickerViewSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3E266FB51E01491700A165AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 280CAEE76FC044B58F753DE4 /* Pods-CircularPickerViewSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CircularPickerViewSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Appus.CircularPickerViewSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E266F9C1E01491700A165AD /* Build configuration list for PBXProject "CircularPickerViewSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E266FB11E01491700A165AD /* Debug */,
+				3E266FB21E01491700A165AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E266FB31E01491700A165AD /* Build configuration list for PBXNativeTarget "CircularPickerViewSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E266FB41E01491700A165AD /* Debug */,
+				3E266FB51E01491700A165AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E266F991E01491700A165AD /* Project object */;
+}

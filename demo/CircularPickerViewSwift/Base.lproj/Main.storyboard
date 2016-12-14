@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CircularPickerViewSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qqt-CP-LgU" customClass="AppusCircularPickerView" customModule="AppusCircularPickerView">
+                                <rect key="frame" x="67" y="64" width="240" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="A5q-U5-cr6"/>
+                                    <constraint firstAttribute="width" constant="240" id="sQy-2Z-CFN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minValue">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
+                                        <integer key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="defaultValue">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="step">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" red="0.98823529409999999" green="0.59607843140000005" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" red="0.35686274509999999" green="0.74901960779999999" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="circularPickerValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="uf6-jo-9BS"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgU-EU-Ssb">
+                                <rect key="frame" x="183" y="324" width="10" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.59607843140000005" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line width" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvn-eU-XPS">
+                                <rect key="frame" x="39" y="381" width="93" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="6on-Wu-g7c">
+                                <rect key="frame" x="140" y="378" width="94" height="29"/>
+                                <connections>
+                                    <action selector="lineWidthChangedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="maX-DH-70P"/>
+                                </connections>
+                            </stepper>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B43-T6-Icj">
+                                <rect key="frame" x="185" y="437" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchChangedWithSender:" destination="BYZ-38-t0r" eventType="valueChanged" id="FTY-Dj-QHz"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autocomplete" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFV-dS-B7t">
+                                <rect key="frame" x="39" y="441" width="138" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyR-1y-Dmu">
+                                <rect key="frame" x="242" y="380" width="22" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6on-Wu-g7c" firstAttribute="leading" secondItem="bvn-eU-XPS" secondAttribute="trailing" constant="8" id="1x7-0L-tEX"/>
+                            <constraint firstItem="qqt-CP-LgU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="CxM-6X-A6O"/>
+                            <constraint firstItem="qqt-CP-LgU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D1O-1X-SUy"/>
+                            <constraint firstItem="6on-Wu-g7c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D28-ww-20d"/>
+                            <constraint firstItem="B43-T6-Icj" firstAttribute="leading" secondItem="PFV-dS-B7t" secondAttribute="trailing" constant="8" id="ESx-Oo-Ji9"/>
+                            <constraint firstItem="fyR-1y-Dmu" firstAttribute="centerY" secondItem="6on-Wu-g7c" secondAttribute="centerY" id="GOc-72-DtJ"/>
+                            <constraint firstItem="bvn-eU-XPS" firstAttribute="centerY" secondItem="6on-Wu-g7c" secondAttribute="centerY" id="L1L-Pn-1hE"/>
+                            <constraint firstItem="PFV-dS-B7t" firstAttribute="leading" secondItem="bvn-eU-XPS" secondAttribute="leading" id="RCC-Jb-bSh"/>
+                            <constraint firstItem="PFV-dS-B7t" firstAttribute="centerY" secondItem="B43-T6-Icj" secondAttribute="centerY" id="UKA-fK-uWb"/>
+                            <constraint firstItem="fyR-1y-Dmu" firstAttribute="leading" secondItem="6on-Wu-g7c" secondAttribute="trailing" constant="8" id="Y1I-97-uWR"/>
+                            <constraint firstItem="B43-T6-Icj" firstAttribute="top" secondItem="6on-Wu-g7c" secondAttribute="bottom" constant="30" id="b7O-1u-UcY"/>
+                            <constraint firstItem="jgU-EU-Ssb" firstAttribute="top" secondItem="qqt-CP-LgU" secondAttribute="bottom" constant="20" id="eXU-Yl-TEl"/>
+                            <constraint firstItem="6on-Wu-g7c" firstAttribute="top" secondItem="jgU-EU-Ssb" secondAttribute="bottom" constant="30" id="f1u-QM-ffa"/>
+                            <constraint firstItem="B43-T6-Icj" firstAttribute="trailing" secondItem="6on-Wu-g7c" secondAttribute="trailing" id="ghg-Wv-vbY"/>
+                            <constraint firstItem="jgU-EU-Ssb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t7C-Gz-b9n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="circularPicker" destination="qqt-CP-LgU" id="VnH-ar-Gtl"/>
+                        <outlet property="lineWidthLabel" destination="fyR-1y-Dmu" id="Og6-7Q-pU1"/>
+                        <outlet property="lineWidthStepper" destination="6on-Wu-g7c" id="Pl5-sl-XBT"/>
+                        <outlet property="valueLabel" destination="jgU-EU-Ssb" id="aM2-mQ-mhQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CirclePicker.xcodeproj">
+      location = "self:CircularPickerViewSwift.xcodeproj">
    </FileRef>
 </Workspace>
