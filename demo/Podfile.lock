@@ -1,0 +1,12 @@
+PODS:
+  - CircularPickerView (0.1.0)
+
+DEPENDENCIES:
+  - CircularPickerView
+
+SPEC CHECKSUMS:
+  CircularPickerView: ffb4f092ea02c97328fabc5c1e19f7b07e5db91b
+
+PODFILE CHECKSUM: 330b033941fe96b134955585fe61d9ebb571862a
+
+COCOAPODS: 1.2.0

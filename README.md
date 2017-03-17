@@ -11,9 +11,9 @@ Made by [![Appus Studio](https://github.com/appus-studio/Appus-Splash/blob/maste
 
 
 ##Example animating
-![](Resourse/using_example.gif)
+![](Resource/using_example.gif)
 ##Example configuring
-![](Resourse/config_example.gif)
+![](Resource/config_example.gif)
 
 #Setup
 ```Ruby
