@@ -10,15 +10,15 @@ Made by [![Appus Studio](https://github.com/appus-studio/Appus-Splash/blob/maste
 * [Setup](#setup)
 
 
-##Example animating
+# Example animating
 
-![](Resource/using_example.gif)
+![](Resource/using_example.gif =320×474)
 
-##Example configuring
+# Example configuring
 
-![](Resource/config_example.gif)
+![](Resource/config_example.gif =600×583)
 
-#Setup
+# Setup
 ```Ruby
 pod 'CircularPickerView'
 ```
