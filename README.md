@@ -11,8 +11,11 @@ Made by [![Appus Studio](https://github.com/appus-studio/Appus-Splash/blob/maste
 
 
 ##Example animating
+
 ![](Resource/using_example.gif)
+
 ##Example configuring
+
 ![](Resource/config_example.gif)
 
 #Setup
