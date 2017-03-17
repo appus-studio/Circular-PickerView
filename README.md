@@ -12,11 +12,11 @@ Made by [![Appus Studio](https://github.com/appus-studio/Appus-Splash/blob/maste
 
 # Example animating
 
-![](Resource/using_example.gif =320×474)
+<img src="https://github.com/alexey-kubas-appus/Circular-PickerView/blob/master/Resource/using_example.gif" width="320">
 
 # Example configuring
 
-![](Resource/config_example.gif =600×583)
+<img src="https://github.com/alexey-kubas-appus/Circular-PickerView/blob/master/Resource/config_example.gif" width="600">
 
 # Setup
 ```Ruby
