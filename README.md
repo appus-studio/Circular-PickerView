@@ -1,7 +1,7 @@
 CircularPickerView
 =====================
 
-Made by [![Appus Studio](https://github.com/appus-studio/Appus-Splash/blob/master/image/logo.png)](http://appus.pro)
+Made by [![Appus Studio](https://github.com/alexey-kubas-appus/Circular-PickerView/blob/master/Resource/appus.png)](https://appus.software)
 
 'CircularPickerView' very simple picker which allow you to select value within certain limits.
 
@@ -26,12 +26,12 @@ pod 'CircularPickerView'
 Developed By
 ------------
 
-* Alexey Kubas, Valdysalv Anokhin Appus Studio
+* Alexey Kubas, Valdysalv Anokhin, [Appus Studio](https://appus.software)
 
 License
 --------
 
-Copyright 2015 Appus Studio.
+Copyright 2015 [Appus Studio](https://appus.software).
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
